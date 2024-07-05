@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Moon</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(#2b1055, #7597de);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.active {
+            background: #fff;
+            color: #2b1055;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #1c0522, transparent);
+            z-index: 1000;
+        }
+
+        section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        section img#moon {
+            mix-blend-mode: screen;
+        }
+
+        section img#mountains_front {
+            z-index: 10;
+        }
+
+        #text {
+            position: absolute;
+            right: -350px;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 7.5vw;
+            z-index: 9;
+        }
+
+        #btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 40px;
+            background: #fff;
+            color: #2b1055;
+            font-size: 1.5em;
+            z-index: 9;
+            transform: translateY(100px);
+        }
+
+        .sec {
+            position: relative;
+            padding: 100px;
+            background: #1c0522;
+        }
+
+        .sec h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .sec p {
+            font-size: 1em;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <a href="#" class="logo">LUNA~</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="star.png" id="stars" />
+        <img src="moon.png" id="moon" />
+        <img src="mountain.png" id="mountains_behind" />
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountain1.png" id="mountains_front" />
+    </section>
+
+    <div class="sec" id="sec">
+        <h4>"Moonlight" by Christina Rossetti (1876)</h4><br />
+        <p>
+            It is a beauteous evening, calm and free,<br />
+            The holy time is quiet as a Nun<br />
+            Breathless with adoration; the broad sun<br />
+            Is sinking down in its tranquility;<br /><br />
+        </p>
+        <h4>"The Moon was but a Chin of Gold" by Emily Dickinson (circa 1861)</h4><br />
+        <p>
+            The Moon was but a Chin of Gold<br />
+            A Night or two ago—<br />
+            And now she turns Her perfect Face<br />
+            Upon the World below—<br /><br />
+        </p>
+        <h4>"The Moon" by Robert Louis Stevenson (1885):</h4><br />
+        <p>
+            The moon has a face like the clock in the hall; She shines on thieves on<br />
+            the garden wall, On streets and fields and harbour quays, And birdies<br />
+            asleep in the forks of the trees. The squalling cat and the squeaking<br />
+            mouse, The howling dog by the door of the house, The bat that lies in<br />
+            bed at noon, All love to be out by the light of the moon. But all of the<br />
+            things that belong to the day Cuddle to sleep to be out of her way; And<br />
+            flowers and children close their eyes Till up in the morning the sun<br />
+            shall arise.<br /><br />
+        <h4>"To the Moon" by Percy Bysshe Shelley (1817):</h4><br />
+        <p>
+        Art thou pale for weariness<br />
+        Of climbing heaven and gazing on the earth,<br />
+        Wandering companionless<br />
+        Among the stars that have a different birth,<br />
+        —
+        And ever changing, like a joyless eye<br />
+        That finds no object worth its constancy?<br />
+        Thou chosen sister of the Spirit,<br />
+        That gazes on thee till in thee it pities ...<br /><br />
+    </p>
+        <h4>""The Moon" by Emily Dickinson:</h4><br />
+        <p>
+        The moon was but a chin of gold<br />
+        A night or two ago,<br />
+        And now she turns her perfect face<br />
+        Upon the world below.<br />
+        Her forehead is of amplest blond;<br />
+        Her cheek like beryl stone;<br />
+        Her eye unto the summer dew<br />
+        The likest I have known.<br />
+        Her lips of amber never part;<br />
+        But what must be the smile<br />
+        Upon her friend she could bestow<br />
+        Were such her silver will!<br />
+        And what a privilege to be<br />
+        But the remotest star!<br />
+        For certainly her way might pass<br />
+        Beside your twinkling door.<br />
+        Her bonnet is the firmament,<br />
+        The universe her shoe,<br />
+        The stars the trinkets at her belt,<br />
+        Her dimities of blue.<br /><br />
+        </p>
+        <h4>"Bright Star" by John Keats (1819)</h4><br />
+        <p>
+            Bright star, would I were stedfast as thou art—<br />
+            Not in lone splendour hung aloft the night<br />
+            And watching, with eternal lids apart,<br />
+            Like nature's patient, sleepless Eremite,<br />
+        </p>
+    </div>
+    
+    <script>// Get references to the elements
+        const stars = document.getElementById('stars');
+        const moon = document.getElementById('moon');
+        const mountains_behind = document.getElementById('mountains_behind');
+        const text = document.getElementById('text');
+        const btn = document.getElementById('btn');
+        const mountains_front = document.getElementById('mountains_front');
+        const header = document.querySelector('header');
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', function() {
+          // Get the current scroll position
+          let value = window.scrollY;
+          
+          // Update element styles based on scroll position
+          stars.style.left = value * 0.25 + 'px';
+          moon.style.top = value * 1.05 + 'px';
+          mountains_behind.style.top = value * 0.5 + 'px';
+          mountains_front.style.top = value * 0 + 'px';
+          text.style.marginRight = value * 4 + 'px';
+          text.style.marginTop = value * 1.5 + 'px';
+          btn.style.marginTop = value * 1.5 + 'px';
+          header.style.top = value * 0.5 + 'px';
+        });</script>
+</body>
+
+</html>
